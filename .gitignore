@@ -1,0 +1,32 @@
+# M-Control-Releases is an allowlisted release/support repository.
+# Everything is ignored unless explicitly approved below.
+*
+
+!.gitignore
+!README.md
+!README_EN.md
+
+!docs/
+docs/*
+!docs/QUICKSTART.md
+!docs/FAQ.md
+!docs/COMPATIBILITY.md
+!docs/M-Control_安装前说明.txt
+!docs/M-Control_安装后说明.txt
+!docs/M-Control_许可协议.txt
+!docs/branding/
+docs/branding/*
+!docs/branding/m-control-repository-icon.png
+!docs/branding/m-control-social-preview.png
+!docs/branding/sponsor-chaoge-wechat.jpg
+!docs/branding/sponsor-qrcode.png
+
+!website/
+website/*
+!website/index.html
+!website/style.css
+!website/animations.css
+!website/script.js
+!website/assets/
+website/assets/*
+!website/assets/logo.png

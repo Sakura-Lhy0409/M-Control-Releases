@@ -1,0 +1,56 @@
+M-Control 安装前说明
+
+M-Control 是面向 MSI 微星笔记本的第三方硬件控制与监控工具，不是 MSI 官方软件。继续安装前，请阅读本说明和《M-Control 软件许可与免责声明》。
+
+一、确认下载来源
+
+仅从以下正式仓库的 Releases 页面或维护者明确公布的可信镜像下载：
+https://github.com/Sakura-Lhy0409/M-Control-Releases/releases
+
+请对照 Release 提供的 SHA256 校验值。校验不一致、来源不明或版本标识异常时不要运行。
+
+二、确认设备和系统
+
+- Windows 10 / 11 x64。
+- MSI 笔记本；非 MSI 设备不属于主要支持范围。
+- .NET Framework 4.6.2。
+- Microsoft Edge WebView2 Runtime。
+- 正常工作的芯片组、显卡和 MSI 平台驱动。
+- 底层硬件访问和部分控制操作需要管理员权限。
+
+安装程序能够检查的前置条件有限，不应假定安装包附带全部系统或硬件驱动。缺少组件时，请优先从 Microsoft、MSI 或硬件厂商官方渠道安装。
+
+兼容性说明：
+https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/COMPATIBILITY.md
+
+三、正式版功能边界
+
+正式版包含 CPU / GPU / 风扇 / 电池监控、风扇曲线、性能和电源模式、受支持机型的 GPU 模式、电池功能、SteelSeries 灯效、快捷键 OSD 与本地诊断。
+
+GPU 遥测仅为只读。正式版不包含 GPU 超频、VF 曲线、GPU 锁频、游戏 FPS 检测或硬件实时监控叠加层。
+
+四、避免控制冲突
+
+不要让 M-Control 与 MSI Center、Dragon Center 或其他硬件控制工具同时修改同一项风扇、情景模式、GPU 模式、电池或灯效设置。多个程序同时写入可能造成状态互相覆盖或显示不一致。
+
+五、硬件控制风险
+
+- GPU 模式切换可能需要重启，操作前请保存工作。
+- 风扇曲线过低可能造成高温；应从默认曲线开始小幅调整并验证。
+- 风扇全速会明显增加噪音，不建议长期无必要运行。
+- 电池充电上限会改变充电行为，请按实际使用场景设置。
+- 不同机型、BIOS、EC 和驱动组合可能产生不同结果。
+
+如果不理解上述风险、无法接受闭源免费授权或不信任软件来源，请取消安装。
+
+六、隐私和网络
+
+M-Control 不做遥测，不主动上传硬件信息，也不读取个人文件。核心控制在本机执行。版本检查会访问 GitHub Releases；用户主动打开支持页或提交反馈时会访问相应网站。
+
+七、获取帮助
+
+快速开始：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/QUICKSTART.md
+常见问题：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/FAQ.md
+问题反馈：https://github.com/Sakura-Lhy0409/M-Control-Releases/issues
+
+继续安装表示您已阅读、理解并接受许可协议和风险说明。

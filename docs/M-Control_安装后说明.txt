@@ -1,0 +1,36 @@
+M-Control 安装后说明
+
+一、首次启动
+
+从桌面或开始菜单启动 M-Control。若程序提示权限不足，请完全退出后以管理员身份运行。首次启动先核对机型、CPU、GPU、BIOS / EC 和仪表盘数据是否合理。
+
+二、界面无法显示
+
+确认 Microsoft Edge WebView2 Runtime 和 .NET Framework 4.6.2 可用。安装包不保证附带所有系统或硬件驱动；缺少组件时请从 Microsoft、MSI 或硬件厂商官方渠道获取。
+
+三、逐项验证功能
+
+不同 MSI 机型的 EC、WMI、风扇、GPU 模式、电池和键盘通道不同。建议从默认设置开始逐项验证，不要直接套用其他机型的风扇或电源参数。
+
+正式版 GPU 遥测只读，不包含 GPU 超频、VF 曲线、GPU 锁频、游戏 FPS 检测或硬件实时监控叠加层。
+
+四、托盘与完全退出
+
+根据“设置”页面的关闭行为，关闭窗口可能进入系统托盘。需要完全退出时，请使用托盘菜单中的“退出”，并确认没有 M-Control 后台进程继续运行。
+
+五、避免冲突
+
+不要让 MSI Center、Dragon Center 或其他硬件控制工具同时修改同一控制项。出现设置被覆盖、状态跳变或风扇异常时，先完全退出其他控制软件，再恢复默认设置并重新验证。
+
+六、日志和反馈
+
+错误日志通常位于：%LocalAppData%\M-Control\error.log
+
+提交问题前请记录完整机型、M-Control 版本、Windows、BIOS / EC、相关驱动版本和复现步骤。上传日志或诊断包前，请自行检查并移除不希望公开的信息。
+
+快速开始：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/QUICKSTART.md
+常见问题：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/FAQ.md
+兼容性说明：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/COMPATIBILITY.md
+问题反馈：https://github.com/Sakura-Lhy0409/M-Control-Releases/issues
+
+感谢使用 M-Control。
