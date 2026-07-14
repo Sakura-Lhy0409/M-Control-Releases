@@ -28,7 +28,7 @@
 </div>
 
 > [!NOTE]
-> 本仓库目前尚无正式 Release 或安装包。正式发布后，请只从本仓库的 [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) 获取文件，并核对发布页提供的 SHA256。
+> 正式版请只从本仓库的 [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) 下载，并核对发布页提供的 SHA256。大多数用户选择安装包；免安装使用可选普通便携版；系统缺少 WebView2 时可选附带微软官方 x64 WebView2 离线安装程序的便携版。
 
 ## 为什么选择 M-Control
 
@@ -75,7 +75,7 @@
 
 ## 使用边界
 
-M-Control 采用闭源免费授权；本仓库目前尚未提供安装包。它不是 MSI / Micro-Star International 官方软件，也不受 MSI、NVIDIA、AMD、Intel 或 Microsoft 授权或背书。硬件控制行为会因机型和固件而异，可能影响温度、噪音、续航、稳定性或保修判断；请在理解风险并保留恢复方案后使用。正式发布包推出后，个人设备可免费使用，但不得商业售卖、冒充原作者或删除署名。
+M-Control 采用闭源免费授权。它不是 MSI / Micro-Star International 官方软件，也不受 MSI、NVIDIA、AMD、Intel 或 Microsoft 授权或背书。硬件控制行为会因机型和固件而异，可能影响温度、噪音、续航、稳定性或保修判断；请在理解风险并保留恢复方案后使用。正式发布包可在个人设备上免费使用，但不得商业售卖、冒充原作者或删除署名。
 
 <div align="center">
   <sub>感谢赞助商、赞赏支持者，以及每一位提交兼容性反馈的用户。</sub>

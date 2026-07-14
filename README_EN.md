@@ -28,7 +28,7 @@
 </div>
 
 > [!NOTE]
-> No official package has been published to this repository yet. When releases become available, download them only from this repository's [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) page and verify the supplied SHA256 checksums.
+> Download official builds only from this repository's [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) page and verify the supplied SHA256 checksums. Most users should choose the installer; portable users can choose the regular archive; systems without WebView2 can use the archive containing Microsoft's official x64 WebView2 offline installer.
 
 ## Why M-Control
 
@@ -75,7 +75,7 @@ When reporting a problem, include the exact laptop model, Windows version, BIOS/
 
 ## Usage boundaries
 
-M-Control uses a closed-source freeware license; this repository does not currently host an installer or portable package. It is not affiliated with, authorized by, or endorsed by MSI / Micro-Star International, NVIDIA, AMD, Intel, or Microsoft. Hardware behavior varies by model and firmware and may affect thermals, acoustics, battery life, stability, or warranty coverage; understand the risks and keep a recovery path before using hardware controls. Once official packages are available, they may be used free of charge on personal devices, but commercial resale, impersonation, and attribution removal are prohibited.
+M-Control uses a closed-source freeware license. It is not affiliated with, authorized by, or endorsed by MSI / Micro-Star International, NVIDIA, AMD, Intel, or Microsoft. Hardware behavior varies by model and firmware and may affect thermals, acoustics, battery life, stability, or warranty coverage; understand the risks and keep a recovery path before using hardware controls. Official packages may be used free of charge on personal devices, but commercial resale, impersonation, and attribution removal are prohibited.
 
 <div align="center">
   <sub>Thank you to our sponsor, contributors, and everyone who shares compatibility feedback.</sub>

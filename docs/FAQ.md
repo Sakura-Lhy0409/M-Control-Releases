@@ -15,6 +15,8 @@
 5. 重新完整解压便携包，不要在 ZIP 内直接运行。
 6. 仍无法启动时，到 Issues 提交错误日志和系统信息。
 
+若系统被精简掉 WebView2，可下载同版本的 `Portable_WebView2_Offline.zip`，完整解压后先运行包内 `WebView2_Offline\MicrosoftEdgeWebView2RuntimeInstallerX64.exe`。该文件是微软官方 x64 离线安装程序；安装完成后再运行 `MControl.exe`。
+
 ### Q3：提示权限不足怎么办？
 
 退出程序后，右键 M-Control 并选择“以管理员身份运行”。EC、MSI WMI、风扇、电池和部分硬件状态访问需要较高权限。

@@ -14,6 +14,9 @@ docs/*
 !docs/M-Control_安装前说明.txt
 !docs/M-Control_安装后说明.txt
 !docs/M-Control_许可协议.txt
+!docs/releases/
+docs/releases/*
+!docs/releases/v1.1.0.md
 !docs/branding/
 docs/branding/*
 !docs/branding/m-control-repository-icon.png
