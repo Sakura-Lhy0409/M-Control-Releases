@@ -1,86 +1,82 @@
-<div align="center">
-  <img height="128" src="docs/branding/m-control-repository-icon.png" alt="M-Control Logo">
-  <h1>M-Control Releases</h1>
-  <p>M-Control 官方下载、更新、文档与问题反馈仓库</p>
-</div>
-
 <table>
   <tr>
     <td width="50%" align="center">
-      <strong>赞助商 · 微星电竞超哥</strong><br>
-      <img src="docs/branding/sponsor-chaoge-wechat.jpg" height="320" alt="微星电竞超哥微信二维码"><br>
-      打游戏选微星 · 买微星找超哥
+      <a href="docs/branding/sponsor-chaoge-wechat.jpg"><img src="docs/branding/sponsor-chaoge-wechat.jpg" height="140" alt="微星电竞超哥微信二维码"></a><br>
+      <strong>项目赞助支持 · 微星电竞超哥</strong><br>
+      <sub>感谢为 M-Control 的持续维护提供支持</sub>
     </td>
     <td width="50%" align="center">
+      <a href="docs/branding/sponsor-qrcode.png"><img src="docs/branding/sponsor-qrcode.png" height="140" alt="M-Control 软件赞赏码"></a><br>
       <strong>M-Control 赞赏支持</strong><br>
-      <img src="docs/branding/sponsor-qrcode.png" height="320" alt="M-Control 软件赞赏码"><br>
-      感谢支持 M-Control 持续维护
+      <sub>感谢每一份对独立开发的支持</sub>
     </td>
   </tr>
 </table>
 
-## 下载与版本
+<div align="center">
+  <img height="96" src="docs/branding/m-control-repository-icon.png" alt="M-Control Logo">
+  <h1>M-Control</h1>
+  <p><strong>轻量、本地、无遥测的 MSI 笔记本控制台</strong></p>
+  <p>把实时监控、风扇、性能、电池、GPU 模式和键盘灯效集中在一个 Windows 应用中。<br>M-Control 由社区独立开发，并非 MSI 官方软件。</p>
+  <p>
+    <img src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white" alt="Windows 10 / 11">
+    <img src="https://img.shields.io/badge/MSI-Laptop-D23D1D" alt="MSI Laptop">
+    <img src="https://img.shields.io/badge/Processing-Local-success" alt="Local processing">
+    <img src="https://img.shields.io/badge/Telemetry-None-success" alt="No telemetry">
+  </p>
+  <p>简体中文 · <a href="README_EN.md">English</a></p>
+</div>
 
-- 当前正式源码版本：`1.0.191`。
-- 正式安装包、便携包和 SHA256 校验值统一发布在 [GitHub Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases)。
-- 安装版文件名为 `MControl_v<版本号>_Setup.exe`，适合大多数用户。
-- 便携版文件名为 `MControl_v<版本号>_Portable.zip`，解压后使用。
-- 如果 Releases 页面暂时没有对应版本资产，请等待正式发布，不要从不明第三方下载。
+> [!NOTE]
+> 本仓库目前尚无正式 Release 或安装包。正式发布后，请只从本仓库的 [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) 获取文件，并核对发布页提供的 SHA256。
 
-[English](README_EN.md) · [快速开始](docs/QUICKSTART.md) · [安装前说明](docs/M-Control_安装前说明.txt) · [安装后说明](docs/M-Control_安装后说明.txt)
+## 为什么选择 M-Control
 
-## M-Control 是什么
+- **轻量集中**：把 MSI 笔记本常用控制集中到一个应用，减少在多个工具之间切换。
+- **本地优先**：核心监控与硬件控制在本机执行，不依赖账号或云服务。
+- **无遥测**：硬件数据仅用于本机监控与控制，不为遥测目的记录或上传；软件也不读取个人文件。
 
-M-Control 是面向 MSI 微星笔记本的第三方 Windows 硬件控制与监控工具，目标是把常用的本地控制能力集中在一个轻量应用中。它不是 MSI / Micro-Star International 官方软件，也不代表 MSI、NVIDIA、AMD、Intel 或 Microsoft 提供、授权或背书。
+## 核心能力
 
-## 正式版功能
+- **实时监控**：CPU / GPU 温度、频率、功耗、利用率，以及电池、风扇和机型支持的扩展传感器。
+- **散热与性能**：CPU / GPU 风扇曲线、全速模式、性能模式、Windows 电源计划，以及受支持硬件的状态读回。
+- **电池与显卡模式**：充电上限、健康信息，以及受支持机型的核显、混合和独显模式切换。
+- **灯效与快捷键**：SteelSeries 键盘灯效、快捷键状态反馈和 OSD 提示；逐键控制仅适用于具备对应键位拓扑和 HID 通道的受支持设备。
 
-- 仪表盘：CPU / GPU 温度、频率、功耗、利用率、电池和风扇状态。
-- GPU 监控：通过当前可用驱动接口提供只读遥测，不修改频率或电压。
-- 风扇控制：CPU / GPU 风扇曲线、全速模式、校准、RPM 与百分比显示。
-- 性能与电源：情景模式、Windows 电源计划、系统能效和真实状态同步。
-- GPU 模式：在机型支持时切换核显、混合与独显模式；部分切换需要重启。
-- 电池：充电上限、健康度、循环次数、容量和充放电状态。
-- SteelSeries 键盘灯效：在兼容设备和可用 HID 通道上提供灯效、亮度、速度与逐键能力。
-- 快捷键与 OSD：风扇全速、触摸板及机型支持的状态提示。
-- 诊断与支持：本地日志、诊断报告、MSI 支持页入口和版本检查。
+> [!IMPORTANT]
+> 计划发布的正式版 GPU 功能以只读遥测和受支持机型的 GPU 模式切换为主，不包含 GPU 超频、VF 曲线、GPU 锁频、游戏 FPS 检测或硬件实时监控叠加层。
 
-正式版不包含 GPU 超频、VF 曲线、GPU 锁频、游戏 FPS 检测或硬件实时监控叠加层。实验分支中的能力不代表正式 Release 功能。
+## 兼容与可信
 
-## 系统与兼容性
+**运行要求**
 
-- Windows 10 / 11 x64。
-- .NET Framework 4.6.2 和 Microsoft Edge WebView2 Runtime。
-- MSI 笔记本；具体功能取决于机型、BIOS、EC 固件、MSI 平台驱动和硬件通道。
-- NVIDIA 只读 GPU 遥测需要可用的 NVIDIA 驱动及相应接口。
-- 底层硬件访问和部分控制操作需要管理员权限。
+- Windows 10 / 11 x64、.NET Framework 4.6.2、Microsoft Edge WebView2 Runtime。
+- 面向 MSI 笔记本；实际能力取决于机型、BIOS、EC 固件和相关驱动。
+- 部分底层硬件控制需要管理员权限。
 
-请先阅读 [兼容性说明](docs/COMPATIBILITY.md)。未列出的机型不等于不支持，但应从默认设置开始逐项验证。
+**可信原则**
 
-## 文档
+- 正式发布包将提供 SHA256；校验不一致时不要运行。
+- 核心功能本地执行；硬件数据不用于遥测，也不会主动上传。
+- 与 MSI Center 等硬件控制软件同时运行可能产生冲突。
 
-- [快速开始](docs/QUICKSTART.md)
-- [常见问题](docs/FAQ.md)
-- [兼容性说明](docs/COMPATIBILITY.md)
-- [安装前说明](docs/M-Control_安装前说明.txt)
-- [安装后说明](docs/M-Control_安装后说明.txt)
-- [软件许可与免责声明](docs/M-Control_许可协议.txt)
+## 文档与反馈
 
-## 反馈与社区
+- [快速开始](docs/QUICKSTART.md) · 下载、安装、权限与首次使用
+- [常见问题](docs/FAQ.md) · 常见故障与排查方法
+- [兼容性说明](docs/COMPATIBILITY.md) · 支持条件与机型差异
+- [安装前说明](docs/M-Control_安装前说明.txt) · 安装前必须了解的事项
+- [安装后说明](docs/M-Control_安装后说明.txt) · 首次启动与使用建议
+- [软件许可与免责声明](docs/M-Control_许可协议.txt) · 使用边界与风险说明
+- [GitHub Issues](https://github.com/Sakura-Lhy0409/M-Control-Releases/issues) · 报告问题和兼容性反馈
+- [GitHub Discussions](https://github.com/Sakura-Lhy0409/M-Control-Releases/discussions) · 使用交流与经验分享
 
-- [提交 Issue](https://github.com/Sakura-Lhy0409/M-Control-Releases/issues)
-- [参与 Discussion](https://github.com/Sakura-Lhy0409/M-Control-Releases/discussions)
+反馈问题时，请提供具体机型、Windows 版本、BIOS / EC 版本、相关驱动版本、复现步骤和必要日志。公开上传诊断资料前，请先移除不希望公开的信息。
 
-反馈时请提供机型、Windows 版本、BIOS / EC 版本、相关驱动版本、M-Control 版本、复现步骤和必要日志。上传诊断包前请自行检查并移除不希望公开的信息。
+## 使用边界
 
-## 风险说明
+M-Control 采用闭源免费授权；本仓库目前尚未提供安装包。它不是 MSI / Micro-Star International 官方软件，也不受 MSI、NVIDIA、AMD、Intel 或 Microsoft 授权或背书。硬件控制行为会因机型和固件而异，可能影响温度、噪音、续航、稳定性或保修判断；请在理解风险并保留恢复方案后使用。正式发布包推出后，个人设备可免费使用，但不得商业售卖、冒充原作者或删除署名。
 
-M-Control 会访问 EC、MSI WMI、UEFI、风扇、电池、键盘 HID 和显卡只读遥测接口。不同机型和固件的行为可能不同。风扇曲线、GPU 模式、电池限制及其他硬件控制可能影响温度、噪音、续航、稳定性或保修判断。请先保存工作、保留恢复方案，并在理解风险后使用。
-
-## 隐私与网络访问
-
-M-Control 不做遥测，不收集用户数据，不主动上传硬件信息，也不读取个人文件。核心控制在本机执行。网络访问限于用户主动打开支持页面、检查 GitHub Releases 更新或提交反馈；用户自行上传的 Issue、Discussion 和诊断附件受 GitHub 的公开范围与隐私规则约束。
-
-## 授权
-
-M-Control 当前以闭源免费方式发布。个人设备可免费安装和使用官方发布包；不得商业售卖、冒充原作者、删除或篡改署名，也不得声称与 MSI 或其他厂商存在官方授权关系。完整条款见 [M-Control 软件许可与免责声明](docs/M-Control_许可协议.txt)。
+<div align="center">
+  <sub>感谢赞助商、赞赏支持者，以及每一位提交兼容性反馈的用户。</sub>
+</div>
