@@ -21,7 +21,7 @@
 
 ## Downloads and version
 
-- Current formal source version: `1.0.190`.
+- Current formal source version: `1.0.191`.
 - Official installers, portable archives, and SHA256 checksums are published on [GitHub Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases).
 - Installer: `MControl_v<version>_Setup.exe`.
 - Portable archive: `MControl_v<version>_Portable.zip`.

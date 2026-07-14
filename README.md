@@ -21,7 +21,7 @@
 
 ## 下载与版本
 
-- 当前正式源码版本：`1.0.190`。
+- 当前正式源码版本：`1.0.191`。
 - 正式安装包、便携包和 SHA256 校验值统一发布在 [GitHub Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases)。
 - 安装版文件名为 `MControl_v<版本号>_Setup.exe`，适合大多数用户。
 - 便携版文件名为 `MControl_v<版本号>_Portable.zip`，解压后使用。
