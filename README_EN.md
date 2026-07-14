@@ -30,6 +30,9 @@
 > [!NOTE]
 > Download official builds only from this repository's [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) page and verify the supplied SHA256 checksums. Most users should choose the installer; portable users can choose the regular archive; systems without WebView2 can use the archive containing Microsoft's official x64 WebView2 offline installer.
 
+> [!IMPORTANT]
+> `v1.1.0` establishes the in-place upgrade baseline. If you use an earlier version, uninstall it before installing `v1.1.0`. Future releases can be installed directly over `v1.1.0` or later.
+
 ## Why M-Control
 
 - **Focused**: Keep the MSI laptop controls you use most in one application instead of switching between several tools.
@@ -44,7 +47,7 @@
 - **Lighting and hotkeys**: SteelSeries keyboard lighting, hotkey feedback, and on-screen status notifications; per-key control is available only on supported devices with the required key topology and HID channel.
 
 > [!IMPORTANT]
-> Planned release builds will provide read-only GPU telemetry and GPU-mode switching on supported models. They will not include GPU overclocking, VF-curve controls, GPU clock locking, game FPS monitoring, or a real-time hardware overlay.
+> Current release builds provide read-only GPU telemetry and GPU-mode switching on supported models. They do not include GPU overclocking, VF-curve controls, GPU clock locking, game FPS monitoring, or a real-time hardware overlay.
 
 ## Compatibility and trust
 
@@ -56,7 +59,7 @@
 
 **Safety principles**
 
-- Official release packages will include SHA256 checksums; do not run a file when its checksum does not match.
+- Official release packages include SHA256 checksums; do not run a file when its checksum does not match.
 - Core features run locally; hardware data is not used for telemetry or uploaded automatically.
 - Running multiple hardware-control suites at the same time may cause conflicts.
 

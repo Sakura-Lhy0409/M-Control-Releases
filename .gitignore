@@ -23,13 +23,3 @@ docs/branding/*
 !docs/branding/m-control-social-preview.png
 !docs/branding/sponsor-chaoge-wechat.jpg
 !docs/branding/sponsor-qrcode.png
-
-!website/
-website/*
-!website/index.html
-!website/style.css
-!website/animations.css
-!website/script.js
-!website/assets/
-website/assets/*
-!website/assets/logo.png
