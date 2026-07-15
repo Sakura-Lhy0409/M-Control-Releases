@@ -15,7 +15,7 @@
 5. 重新完整解压便携包，不要在 ZIP 内直接运行。
 6. 仍无法启动时，到 Issues 提交错误日志和系统信息。
 
-若系统被精简掉 WebView2，可下载同版本的 `Portable_WebView2_Offline.zip`，完整解压后先运行包内 `WebView2_Offline\MicrosoftEdgeWebView2RuntimeInstallerX64.exe`。该文件是微软官方 x64 离线安装程序；安装完成后再运行 `MControl.exe`。
+若系统被精简掉 WebView2，或 Evergreen Runtime 无法安装、无法加载，可直接运行同版本的 `MControl_v<版本号>_Setup_WebView2_Fixed.exe`。该安装包内嵌微软官方 x64 Fixed Version Runtime，不需要另装系统 WebView2。
 
 ### Q3：提示权限不足怎么办？
 

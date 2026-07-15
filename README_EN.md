@@ -28,7 +28,7 @@
 </div>
 
 > [!NOTE]
-> Download official builds only from this repository's [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) page and verify the supplied SHA256 checksums. Most users should choose the installer; portable users can choose the regular archive; systems that cannot install or load WebView2 can use the archive with an embedded Microsoft x64 Fixed Version Runtime.
+> Download official builds only from this repository's [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) page and verify the supplied SHA256 checksums. Most users should choose the regular installer; portable users can choose the standard archive; systems that cannot install or load WebView2 can use the installer with an embedded Microsoft x64 Fixed Version Runtime.
 
 > [!IMPORTANT]
 > `v1.1.0` establishes the in-place upgrade baseline. If you use an earlier version, uninstall it before installing `v1.1.0`. Future releases can be installed directly over `v1.1.0` or later.

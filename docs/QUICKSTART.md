@@ -5,7 +5,7 @@
 ## 1. 下载并校验
 
 1. 打开 [M-Control Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases)。
-2. 大多数用户选择 `MControl_v<版本号>_Setup.exe`；免安装使用可选择 `MControl_v<版本号>_Portable.zip`；系统缺少 WebView2 时可选择 `MControl_v<版本号>_Portable_WebView2_Offline.zip`。
+2. 大多数用户选择 `MControl_v<版本号>_Setup.exe`；免安装使用可选择 `MControl_v<版本号>_Portable.zip`；系统无法安装或加载 WebView2 时可选择 `MControl_v<版本号>_Setup_WebView2_Fixed.exe`。
 3. 对照同一 Release 提供的 SHA256 校验值。校验不一致时不要运行，应重新下载。
 4. 如果 Releases 页面没有对应资产，请等待正式发布，不要从不明第三方获取安装包或驱动。
 
@@ -17,7 +17,7 @@
 - 正常工作的 MSI 平台驱动、芯片组驱动和显卡驱动。
 - 底层硬件访问和部分控制操作需要管理员权限。
 
-安装程序会检查它能够确认的系统条件，但不同 Release 包含的前置组件可能不同。WebView2 离线便携版附带微软官方 x64 离线安装程序，完整解压后先运行 `WebView2_Offline\MicrosoftEdgeWebView2RuntimeInstallerX64.exe`，再启动 M-Control。缺少 .NET Framework 时仍需从 Microsoft 官方渠道安装；不要假定发布包附带所有硬件驱动。
+安装程序会检查它能够确认的系统条件，但不同 Release 包含的前置组件可能不同。`Setup_WebView2_Fixed.exe` 内嵌微软官方 x64 Fixed Version Runtime，不依赖系统 Evergreen Runtime。缺少 .NET Framework 时仍需从 Microsoft 官方渠道安装；不要假定发布包附带所有硬件驱动。
 
 ## 3. 安装或使用便携版
 
@@ -27,6 +27,8 @@
 2. 阅读安装前说明、许可协议和风险提示。
 3. 选择安装目录并完成安装。
 4. 从桌面或开始菜单启动 M-Control。
+
+系统无法安装或加载 WebView2 时，改用同版本的 `MControl_v<版本号>_Setup_WebView2_Fixed.exe`；它仍是安装包，不是便携 ZIP。
 
 `v1.1.0` 是覆盖升级支持的起始版本。早于 `v1.1.0` 的版本建议先卸载旧版，再安装 `v1.1.0`；从 `v1.1.0` 升级到后续版本时，可以直接运行新安装包覆盖安装。
 
