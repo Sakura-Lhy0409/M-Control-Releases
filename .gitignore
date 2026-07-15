@@ -22,6 +22,7 @@ docs/releases/*
 !docs/releases/v1.1.10.md
 !docs/releases/v1.1.12.md
 !docs/releases/v1.1.13.md
+!docs/releases/v1.1.14.md
 !docs/branding/
 docs/branding/*
 !docs/branding/m-control-repository-icon.png
