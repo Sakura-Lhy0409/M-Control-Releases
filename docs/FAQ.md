@@ -15,7 +15,7 @@
 5. 重新完整解压便携包，不要在 ZIP 内直接运行。
 6. 仍无法启动时，到 Issues 提交错误日志和系统信息。
 
-若系统被精简掉 WebView2，或 Evergreen Runtime 无法安装、无法加载，可直接运行同版本的 `MControl_v<版本号>_Setup_WebView2_Fixed.exe`。该安装包内嵌微软官方 x64 Fixed Version Runtime，不需要另装系统 WebView2。
+若系统被精简掉 WebView2，或 Evergreen Runtime 无法安装、无法加载，可运行补丁位为 `0` 的基线版本所提供的 `MControl_v<版本号>_Setup_WebView2_Fixed.exe`。该安装包内嵌微软官方 x64 Fixed Version Runtime，不需要另装系统 WebView2。补丁位不为 `0` 的版本属于 hotfix，不提供 Fixed 安装包。
 
 ### Q3：提示权限不足怎么办？
 

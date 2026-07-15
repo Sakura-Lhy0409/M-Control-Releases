@@ -28,7 +28,7 @@
 </div>
 
 > [!NOTE]
-> 正式版请只从本仓库的 [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) 下载，并核对发布页提供的 SHA256。大多数用户选择普通安装版；免安装可选普通便携版；无法安装或加载系统 WebView2 的电脑可选内嵌 Fixed Version Runtime 的安装版。
+> 正式版请只从本仓库的 [Releases](https://github.com/Sakura-Lhy0409/M-Control-Releases/releases) 下载，并核对发布页提供的 SHA256。大多数用户选择普通安装版；免安装可选普通便携版。内嵌 Fixed Version Runtime 的安装版仅随补丁位为 `0` 的基线版本提供，补丁位不为 `0` 的 hotfix 不提供该大包。
 
 > [!IMPORTANT]
 > `v1.1.0` 是覆盖升级支持的起始版本。早于 `v1.1.0` 的版本建议先卸载旧版，再安装 `v1.1.0`；从 `v1.1.0` 升级到后续版本时，可直接运行新安装包覆盖安装。
