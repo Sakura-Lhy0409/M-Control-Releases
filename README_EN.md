@@ -44,7 +44,10 @@
 - **Monitoring**: CPU/GPU temperature, clocks, power and utilization, plus battery, fan, and model-dependent extended sensors.
 - **Cooling and performance**: CPU/GPU fan curves, full-speed mode, performance modes, Windows power plans, and state readback on supported hardware.
 - **Battery and GPU modes**: Charge limits, battery health, and integrated, hybrid, or discrete GPU-mode switching on supported models.
-- **Lighting and hotkeys**: SteelSeries keyboard lighting, hotkey feedback, and on-screen status notifications; per-key control is available only on supported devices with the required key topology and HID channel.
+- **Lighting and hotkeys**: SteelSeries / Mystic Light lighting, hotkey feedback and OSD; per-key features depend on topology and HID routes. PRISM realtime effects are generated from algorithms, not replayed capture frames.
+- **Display color**: LM import and True Color profiles for a matching internal panel. HDR pauses SDR calibration; an inactive internal panel never redirects calibration to an external screen.
+
+Restore startup fan curve uses the snapshot taken before this session's first fan write, not BIOS factory defaults. GPU modes are in Performance and follow device capabilities; apply now may restart or perform S5 shutdown/automatic wake. Battery health, limits and calibration are in Settings.
 
 > [!IMPORTANT]
 > Current release builds provide read-only GPU telemetry and GPU-mode switching on supported models. They do not include GPU overclocking, VF-curve controls, GPU clock locking, game FPS monitoring, or a real-time hardware overlay.
@@ -55,13 +58,16 @@
 
 - Windows 10/11 x64, .NET Framework 4.6.2, and Microsoft Edge WebView2 Runtime.
 - Designed for MSI laptops; available features depend on the model, BIOS, EC firmware, and installed drivers.
-- Some low-level hardware controls require administrator privileges.
+- The executable requests Windows UAC administrator approval. Regular builds use system WebView2; Fixed builds use the bundled Runtime. Portable builds do not install PawnIO automatically.
+- M-Control uses its own MSI ACPI client and MOF resource, without requiring MSI Center or old official runtime DLLs. Platform drivers and firmware interfaces must still be available.
 
 **Safety principles**
 
 - Official release packages include SHA256 checksums; do not run a file when its checksum does not match.
 - Core features run locally; hardware data is not used for telemetry or uploaded automatically.
-- Running multiple hardware-control suites at the same time may cause conflicts.
+- Multiple suites writing the same hardware feature may conflict.
+- Update checks read a fixed manifest and configured mirrors; confirmed updates download and verify an installer. Fixed installations retain the Fixed edition. Diagnostic reports are not uploaded automatically.
+- Compatibility is recorded per device and feature, not certified for an entire series. NVIDIA 6xx private-telemetry crash and delayed gamma-transform fixes are included in v1.3.49; affected devices still require retesting.
 
 ## Documentation and support
 

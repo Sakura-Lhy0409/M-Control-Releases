@@ -1,56 +1,47 @@
-M-Control 安装前说明
+﻿安装前请阅读
 
-M-Control 是面向 MSI 微星笔记本的第三方硬件控制与监控工具，不是 MSI 官方软件。继续安装前，请阅读本说明和《M-Control 软件许可与免责声明》。
+欢迎安装 M-Control。
 
-一、确认下载来源
+M-Control 是面向 MSI 笔记本的第三方硬件控制台，以闭源免费方式发布，不隶属于 MSI。功能受机型、BIOS/EC、接口和驱动状态影响，不能将某系列名称当作全功能支持认证。
 
-仅从以下正式仓库的 Releases 页面或维护者明确公布的可信镜像下载：
-https://github.com/Sakura-Lhy0409/M-Control-Releases/releases
+1. 系统和依赖
 
-请对照 Release 提供的 SHA256 校验值。校验不一致、来源不明或版本标识异常时不要运行。
+使用 Windows 10/11 x64。需要 .NET Framework 4.6.2 或兼容的更高 4.x 版本；安装器发现缺失会提示并可打开微软下载页，不会自动替你完成 .NET 安装。
 
-二、确认设备和系统
+普通安装版需要系统 WebView2 Evergreen；Fixed 安装版内嵌固定版 WebView2。按实际版本附件选择。安装版提供 PawnIO 安装流程；便携版不会自动安装驱动。
 
-- Windows 10 / 11 x64。
-- MSI 笔记本；非 MSI 设备不属于主要支持范围。
-- .NET Framework 4.6.2。
-- Microsoft Edge WebView2 Runtime。
-- 正常工作的芯片组、显卡和 MSI 平台驱动。
-- 底层硬件访问和部分控制操作需要管理员权限。
+M-Control 使用自研 MSI ACPI 客户端和 MOF 注册资源，不要求安装 MSI Center，也不附带旧 MSI 官方运行时 DLL。系统 ACPI、芯片组和显示驱动仍需正常。
 
-安装程序能够检查的前置条件有限，不应假定安装包附带全部系统或硬件驱动。缺少组件时，请优先从 Microsoft、MSI 或硬件厂商官方渠道安装。
+2. 权限和升级
 
-兼容性说明：
-https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/COMPATIBILITY.md
+程序清单请求管理员权限，启动时需要同意 Windows UAC。
+v1.1.0 及以后可使用新安装器覆盖升级，复用安装目录；更早版本先卸载再安装当前版本。Fixed 安装版更新应继续选 Fixed 类型。
 
-三、正式版功能边界
+3. 使用边界
 
-正式版包含 CPU / GPU / 风扇 / 电池监控、风扇曲线、性能和电源模式、受支持机型的 GPU 模式、电池功能、SteelSeries 灯效、快捷键 OSD 与本地诊断。
+GPU 模式在“性能”页，按能力开放。立即生效可能普通重启，也可能 S5 关机后自动唤醒；切换前保存工作并阅读弹窗。
 
-GPU 遥测仅为只读。正式版不包含 GPU 超频、VF 曲线、GPU 锁频、游戏 FPS 检测或硬件实时监控叠加层。
+风扇曲线先读取后小幅调整，应用后观察真实 RPM、温度和稳定性。“恢复启动曲线”恢复本次启动首次写入前的快照，不是 BIOS 出厂重置。
 
-四、避免控制冲突
+电池上限与校准在“设置”页；按供电条件提示操作，校准使用安全取消及恢复入口。
 
-不要让 M-Control 与 MSI Center、Dragon Center 或其他硬件控制工具同时修改同一项风扇、情景模式、GPU 模式、电池或灯效设置。多个程序同时写入可能造成状态互相覆盖或显示不一致。
+PRISM 实时灯效可能需要后台宿主；固件永久保存能力取决于具体设备。LM / True Color 只应用于匹配的活动内屏，HDR 开启时暂停 SDR 校色。
 
-五、硬件控制风险
+避免多个程序持续写同一风扇、场景、灯效或校色功能。M-Control 主线的 GPU 遥测只读，不提供超频和锁频。
 
-- GPU 模式切换可能需要重启，操作前请保存工作。
-- 风扇曲线过低可能造成高温；应从默认曲线开始小幅调整并验证。
-- 风扇全速会明显增加噪音，不建议长期无必要运行。
-- 电池充电上限会改变充电行为，请按实际使用场景设置。
-- 不同机型、BIOS、EC 和驱动组合可能产生不同结果。
+4. 校验、隐私和诊断
 
-如果不理解上述风险、无法接受闭源免费授权或不信任软件来源，请取消安装。
+从正式 Release 下载并核对 SHA256。安全软件拦截时先检查来源和原因。
+核心硬件控制本地执行，不做遥测或自动上传硬件信息。版本检查可由用户手动或设置自动触发，读取固定 updater/update.json 及配置镜像；确认更新后下载并验证安装器。打开驱动支持入口会访问 MSI 官网。
 
-六、隐私和网络
+诊断 ZIP 由用户自行确认并提交。默认错误日志位于 %LocalAppData%\M-Control\error.log。
+不要删除不明资料、csv/xlsx 或任何项目 Temp 内容；卸载 M-Control 不等于必须卸载其他程序共用的 PawnIO。
 
-M-Control 不做遥测，不主动上传硬件信息，也不读取个人文件。核心控制在本机执行。版本检查会访问 GitHub Releases；用户主动打开支持页或提交反馈时会访问相应网站。
-
-七、获取帮助
+5. 帮助
 
 快速开始：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/QUICKSTART.md
 常见问题：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/FAQ.md
-问题反馈：https://github.com/Sakura-Lhy0409/M-Control-Releases/issues
+兼容性：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/COMPATIBILITY.md
+反馈：https://github.com/Sakura-Lhy0409/M-Control-Releases/issues
 
-继续安装表示您已阅读、理解并接受许可协议和风险说明。
+继续安装前请阅读安装器中的许可与免责声明。

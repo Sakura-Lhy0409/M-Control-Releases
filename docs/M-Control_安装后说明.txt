@@ -1,36 +1,38 @@
-M-Control 安装后说明
+﻿安装完成
 
-一、首次启动
+M-Control 已安装完成。启动时按 Windows UAC 提示授权管理员权限。
 
-从桌面或开始菜单启动 M-Control。若程序提示权限不足，请完全退出后以管理员身份运行。首次启动先核对机型、CPU、GPU、BIOS / EC 和仪表盘数据是否合理。
+1. 查看仪表盘及功能状态
+   等待读数完成。问号、无数据和不支持不代表真实零值。
+   功能按当前设备能力开放，缺失时先查看页面提示与 FAQ。
 
-二、界面无法显示
+2. 设置入口
+   性能页：MSI 场景、电源计划、GPU 模式及受支持的扩展能力。
+   风扇控制页：CPU/GPU 曲线、应用、保存配置与恢复启动曲线。
+   设置页：电池健康、充电上限、校准和应用行为。
+   灯光控制及屏幕校色：按设备能力操作；HDR 开启时暂停 SDR 校色。
+   驱动更新页：MSI 官网支持、BIOS、驱动及说明书链接。
 
-确认 Microsoft Edge WebView2 Runtime 和 .NET Framework 4.6.2 可用。安装包不保证附带所有系统或硬件驱动；缺少组件时请从 Microsoft、MSI 或硬件厂商官方渠道获取。
+3. 托盘与后台
+   关闭窗口行为由设置决定；最小化、关闭到托盘和完全退出不同。
+   可通过托盘重新打开或退出。实时灯效、校色和计时器精度可能有独立后台宿主，保留与停止由对应设置控制。
 
-三、逐项验证功能
+4. 调整前后确认
+   “恢复启动曲线”是本次首次风扇写入前的硬件快照，不是 BIOS 出厂曲线。
+   GPU 切换前保存工作；按弹窗执行普通重启或 S5 关机后自动唤醒。
+   电池校准期间遵循供电提示，取消时使用安全恢复入口。
+   避免其他软件同时写入同一硬件功能。
 
-不同 MSI 机型的 EC、WMI、风扇、GPU 模式、电池和键盘通道不同。建议从默认设置开始逐项验证，不要直接套用其他机型的风扇或电源参数。
+5. 更新与排障
+   关于页管理版本检查；Fixed 安装版保持 Fixed 更新类型。
+   普通版界面异常先检查 Evergreen Runtime；Fixed 版检查内嵌 Runtime 完整性。
+   .NET Framework 缺失时按安装器或微软页面提示安装，不能假定程序已自动安装。
+   NVIDIA 6xx 崩溃/校色问题反馈时带上完整驱动版本和应用包来源。
 
-正式版 GPU 遥测只读，不包含 GPU 超频、VF 曲线、GPU 锁频、游戏 FPS 检测或硬件实时监控叠加层。
-
-四、托盘与完全退出
-
-根据“设置”页面的关闭行为，关闭窗口可能进入系统托盘。需要完全退出时，请使用托盘菜单中的“退出”，并确认没有 M-Control 后台进程继续运行。
-
-五、避免冲突
-
-不要让 MSI Center、Dragon Center 或其他硬件控制工具同时修改同一控制项。出现设置被覆盖、状态跳变或风扇异常时，先完全退出其他控制软件，再恢复默认设置并重新验证。
-
-六、日志和反馈
-
-错误日志通常位于：%LocalAppData%\M-Control\error.log
-
-提交问题前请记录完整机型、M-Control 版本、Windows、BIOS / EC、相关驱动版本和复现步骤。上传日志或诊断包前，请自行检查并移除不希望公开的信息。
+   导出程序内诊断 ZIP，或保留 %LocalAppData%\M-Control\error.log。
+   需要详细日志时创建 debug.flag 并重启；诊断资料不会自动上传。
 
 快速开始：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/QUICKSTART.md
 常见问题：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/FAQ.md
-兼容性说明：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/COMPATIBILITY.md
+兼容性：https://github.com/Sakura-Lhy0409/M-Control-Releases/blob/main/docs/COMPATIBILITY.md
 问题反馈：https://github.com/Sakura-Lhy0409/M-Control-Releases/issues
-
-感谢使用 M-Control。
