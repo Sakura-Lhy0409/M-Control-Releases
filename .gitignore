@@ -45,3 +45,6 @@ docs/branding/*
 !docs/branding/sponsor-qrcode.png
 
 !docs/releases/v1.4.2.md
+
+!docs/FEEDBACK.md
+!docs/releases/v1.4.3.md
