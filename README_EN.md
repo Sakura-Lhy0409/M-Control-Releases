@@ -37,7 +37,7 @@
 
 - **Focused**: Keep the MSI laptop controls you use most in one application instead of switching between several tools.
 - **Local-first**: Core monitoring and hardware control run on your PC without an account or cloud service.
-- **No telemetry**: Hardware data is processed locally for monitoring and control, not recorded or uploaded for telemetry; M-Control does not read personal files.
+- **No automatic telemetry**: Hardware data is processed locally and is not uploaded automatically. Reports require user-selected evidence and confirmation; M-Control does not scan personal files.
 
 ## Core capabilities
 
@@ -70,6 +70,8 @@ Restore startup fan curve uses the snapshot taken before this session's first fa
 - Compatibility is recorded per device and feature, not certified for an entire series. NVIDIA 6xx private-telemetry crash and delayed gamma-transform fixes are included in v1.3.49; affected devices still require retesting.
 
 ## Documentation and support
+
+Starting with v1.4.3, submit issues, images, videos and diagnostic packages directly under **Settings → Hardware Diagnostics → Submit a bug report**. Drafts, progress, cancellation, retries and a copyable report ID are included. Evidence is stored privately without a cloud-drive link. See the [feedback guide (Chinese)](docs/FEEDBACK.md) and [v1.4.3 Hotfix notes (Chinese)](docs/releases/v1.4.3.md).
 
 - [Quick Start](docs/QUICKSTART.md) · installation, permissions, and first use
 - [FAQ](docs/FAQ.md) · common problems and troubleshooting
