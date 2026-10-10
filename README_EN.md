@@ -45,7 +45,7 @@
 - **Cooling and performance**: CPU/GPU fan curves, full-speed mode, performance modes, Windows power plans, and state readback on supported hardware.
 - **Startup preferences**: Confirmed Windows power and MSI performance choices are remembered independently, restored at startup, and checked a limited number of times. Later in-app changes take priority. Select the Windows power option once after upgrading from an older build to start remembering it; see [v1.4.5 Hotfix](docs/releases/v1.4.5.md).
 - **Battery and GPU modes**: Charge limits, battery health, and integrated, hybrid, or discrete GPU-mode switching on supported models.
-- **Lighting and hotkeys**: SteelSeries / Mystic Light lighting, hotkey feedback and OSD; per-key features depend on topology and HID routes. PRISM realtime effects are generated from algorithms, not replayed capture frames.
+- **Lighting and hotkeys**: SteelSeries / Mystic Light lighting, hotkey feedback and OSD; per-key features depend on topology and HID routes. PRISM realtime effects are generated from algorithms, not replayed capture frames. See [v1.4.6 Hotfix notes (Chinese)](docs/releases/v1.4.6.md) for GT77 CHERRY, lighting-device recovery and F5 microphone fixes and verification steps.
 - **Display color**: LM import and True Color profiles for a matching internal panel. HDR pauses SDR calibration; an inactive internal panel never redirects calibration to an external screen.
 
 Restore startup fan curve uses the snapshot taken before this session's first fan write, not BIOS factory defaults. GPU modes are in Performance and follow device capabilities; apply now may restart or perform S5 shutdown/automatic wake. Battery health, limits and calibration are in Settings.
