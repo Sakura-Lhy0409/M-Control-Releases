@@ -51,3 +51,10 @@ docs/branding/*
 !docs/releases/v1.4.4.md
 !docs/releases/v1.4.5.md
 !docs/releases/v1.4.6.md
+!docs/gt77-alc-usb-followup.md
+!support/
+support/*
+!support/gt77-usb/
+support/gt77-usb/*
+!support/gt77-usb/Collect-MControlLightingUsbDiagnostics.ps1
+!support/gt77-usb/Run-MControlLightingUsbDiagnostics.cmd
